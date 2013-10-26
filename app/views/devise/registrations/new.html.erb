@@ -6,11 +6,23 @@
   <div><%= f.label :email %><br />
   <%= f.email_field :email, :autofocus => true %></div>
 
+  <div><%= f.label :full_name %><br />
+  <%= f.text_field :name, :autofocus => true %></div>
+
   <div><%= f.label :password %><br />
   <%= f.password_field :password %></div>
 
   <div><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>
+
+  <div><%= f.label :school_affiliation, :autofocus => true %><br />
+  <%= f.text_field :year %></div>
+
+  <div><%= f.label :department, :autofocus => true %><br />
+  <%= f.text_field :department %></div>
+
+  <div><%= f.label "1-3_activities_or_interests", :autofocus => true %><br />
+  <%= f.text_field :interests %></div>
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>

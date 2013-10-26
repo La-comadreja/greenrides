@@ -6,4 +6,6 @@ class Passenger < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   belongs_to :car
+
+  attr_accessible :name, :university, :year, :department, :interests
 end

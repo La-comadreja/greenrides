@@ -9,6 +9,7 @@ gem 'pg'
 
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'devise', '~> 3.0.0.rc'
+gem 'protected_attributes'
 gem 'rails_12factor'
 
 # Use SCSS for stylesheets
