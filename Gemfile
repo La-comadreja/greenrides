@@ -8,7 +8,7 @@ ruby '2.0.0'
 gem 'pg'
 
 gem 'bootstrap-sass', '2.3.2.0'
-gem 'devise', github: 'idl3/devise', branch: 'rails4'
+gem 'devise', '~> 3.0.0.rc'
 gem 'rails_12factor'
 
 # Use SCSS for stylesheets
