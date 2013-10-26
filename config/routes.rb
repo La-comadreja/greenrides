@@ -1,5 +1,5 @@
 Greenrides::Application.routes.draw do
-  #devise_for :passengers
+  devise_for :passengers
   resources :cars
 
   get "home/index"
