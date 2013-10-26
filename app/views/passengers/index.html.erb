@@ -1,0 +1,37 @@
+<h1>Listing passengers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>University</th>
+      <th>Year</th>
+      <th>Department</th>
+      <th>Interests</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @passengers.each do |passenger| %>
+      <tr>
+        <td><%= passenger.name %></td>
+        <td><%= passenger.email %></td>
+        <td><%= passenger.university %></td>
+        <td><%= passenger.year %></td>
+        <td><%= passenger.department %></td>
+        <td><%= passenger.interests %></td>
+        <td><%= link_to 'Show', passenger %></td>
+        <td><%= link_to 'Edit', edit_passenger_path(passenger) %></td>
+        <td><%= link_to 'Destroy', passenger, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Passenger', new_passenger_path %>
