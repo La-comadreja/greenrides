@@ -1,0 +1,39 @@
+<h1>Listing cars</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Origin city</th>
+      <th>Origin</th>
+      <th>Destination city</th>
+      <th>Destination</th>
+      <th>Departure</th>
+      <th>Seats</th>
+      <th>Payment</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cars.each do |car| %>
+      <tr>
+        <td><%= car.origin_city %></td>
+        <td><%= car.origin %></td>
+        <td><%= car.destination_city %></td>
+        <td><%= car.destination %></td>
+        <td><%= car.departure %></td>
+        <td><%= car.seats %></td>
+        <td><%= car.payment %></td>
+        <td><%= link_to 'Show', car %></td>
+        <td><%= link_to 'Edit', edit_car_path(car) %></td>
+        <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Car', new_car_path %>

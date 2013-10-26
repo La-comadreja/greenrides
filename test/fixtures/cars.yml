@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  origin_city: MyString
+  origin: MyString
+  destination_city: MyString
+  destination: MyString
+  departure: 2013-10-26 13:00:54
+  seats: 1
+  payment: 9.99
+
+two:
+  origin_city: MyString
+  origin: MyString
+  destination_city: MyString
+  destination: MyString
+  departure: 2013-10-26 13:00:54
+  seats: 1
+  payment: 9.99

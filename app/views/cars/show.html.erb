@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Origin city:</strong>
+  <%= @car.origin_city %>
+</p>
+
+<p>
+  <strong>Origin:</strong>
+  <%= @car.origin %>
+</p>
+
+<p>
+  <strong>Destination city:</strong>
+  <%= @car.destination_city %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @car.destination %>
+</p>
+
+<p>
+  <strong>Departure:</strong>
+  <%= @car.departure %>
+</p>
+
+<p>
+  <strong>Seats:</strong>
+  <%= @car.seats %>
+</p>
+
+<p>
+  <strong>Payment:</strong>
+  <%= @car.payment %>
+</p>
+
+<%= link_to 'Edit', edit_car_path(@car) %> |
+<%= link_to 'Back', cars_path %>
