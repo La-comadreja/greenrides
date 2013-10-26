@@ -1,6 +1,4 @@
 Greenrides::Application.routes.draw do
-  resources :passengers
-
   resources :cars
 
   get "home/index"
