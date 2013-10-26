@@ -3,26 +3,26 @@
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :university_email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+  <div><%= f.label :university_email %>
+  <%= f.email_field :email, :autofocus => true %></div><br />
 
-  <div><%= f.label :full_name %><br />
-  <%= f.text_field :name, :autofocus => true %></div>
+  <div><%= f.label :full_name %>
+  <%= f.text_field :name, :autofocus => true %></div><br />
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+  <div><%= f.label :password %>
+  <%= f.password_field :password %></div><br />
 
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
+  <div><%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation %></div><br />
 
-  <div><%= f.label :school_affiliation, :autofocus => true %><br />
-  <%= f.text_field :year %></div>
+  <div><%= f.label :school_affiliation, :autofocus => true %>
+  <%= f.text_field :year %></div><br />
 
-  <div><%= f.label :department, :autofocus => true %><br />
-  <%= f.text_field :department %></div>
+  <div><%= f.label :department, :autofocus => true %>
+  <%= f.text_field :department %></div><br />
 
-  <div><%= f.label "1-3_activities_or_interests", :autofocus => true %><br />
-  <%= f.text_field :interests %></div>
+  <div><%= f.label "1-3_activities_or_interests", :autofocus => true %>
+  <%= f.text_field :interests %></div><br />
 
   <div><%= f.submit "Register" %></div>
 <% end %>
