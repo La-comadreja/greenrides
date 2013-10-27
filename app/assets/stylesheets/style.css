@@ -130,7 +130,7 @@ input[type="radio"], input[type="checkbox"] { /*display: inline;*/ width:auto; h
 input[type="checkbox"] + label, input[type="radio"] + label { display: inline;}
 input[type="file"]{ border: none;}
 input[type="date"]{ width: auto;}
-select {height: auto;}
+select {height: auto; width: 70px;}
 /* Placeholders */
 ::-webkit-input-placeholder { color: #BBB;}
 :-moz-placeholder {color: #BBB;}

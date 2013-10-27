@@ -30,7 +30,9 @@
   </div>
   <div class="field">
     <%= f.label :departure %>
-    <%= f.datetime_select :departure %><br />
+    <%= f.date_select :departure, :use_short_month => true, :start_year => Date.current.year, :end_year => Date.current.year + 1 %>
+    &nbsp;at&nbsp;
+    <br />
   </div>
   <div class="field">
     <%= f.label :seats %>
