@@ -179,7 +179,7 @@ label.error { color: #0078CF; margin: 0.5em 0 0 0.5em; font-weight: normal; font
 	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-	#background: 0 100%;}
+	//background: 0 100%;}
 }
 .button:focus, input[type="submit"]:focus, button:focus, .toggle-title:focus {
 	color: #333;
